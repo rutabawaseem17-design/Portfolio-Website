@@ -1481,7 +1481,7 @@ font-size:40px;
 .card-wrapper:hover .image-card{
     transform:translate(-18px,10px) rotate(-8deg);
 }
-
+{
 }
 
 @media (max-width:480px){
@@ -1491,7 +1491,7 @@ font-size:40px;
 }
 
 .hero-left h1{
-    font-size:48px;
+    font-size:40px;
 }
 
 .card-wrapper{
@@ -1507,6 +1507,9 @@ font-size:40px;
 
 .text-card h3{
     font-size:16px;
+}
+.dots{
+    display: none;
 }
 
 }
