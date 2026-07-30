@@ -1481,7 +1481,7 @@ font-size:40px;
 .card-wrapper:hover .image-card{
     transform:translate(-18px,10px) rotate(-8deg);
 }
-{
+
 }
 
 @media (max-width:480px){
@@ -1588,7 +1588,7 @@ font-size:40px;
 @media(max-width:480px){
 
 .skills{
-    padding:50px 15px;
+    padding:10px 15px;
 }
 
 .skills-heading h1{
@@ -1684,7 +1684,7 @@ font-size:40px;
 
 }
 
-@media(max-width:480px){
+/* @media(max-width:480px){
 
 .software h1{
     font-size:28px;
@@ -1706,6 +1706,38 @@ font-size:40px;
 
 .tool-card p{
     font-size:15px;
+}
+
+} */
+
+@media (max-width:480px){
+
+.software h1{
+    font-size:28px;
+    /* padding: 14px; */
+}
+
+.tools{
+    width:75%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+}
+
+.tool-card{
+    padding:18px 0px;
+    min-height:170px;
+    /* width: 100px; */
+}
+
+.tool-card img{
+    width:55px;
+    height:55px;
+}
+
+.tool-card p{
+    font-size:14px;
+    margin-top:12px;
 }
 
 }
