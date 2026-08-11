@@ -1436,11 +1436,11 @@ font-size:40px;
 }
 
 .hero-left h1{
-    font-size:50px;
+    font-size:30px;
 }
 
 .card-wrapper{
-    width:300px;
+    width:200px;
     height:390px;
 }
 
@@ -1714,7 +1714,7 @@ font-size:40px;
 
 .software h1{
     font-size:28px;
-    /* padding: 14px; */
+    padding: 14px;
 }
 
 .tools{
@@ -1727,7 +1727,7 @@ font-size:40px;
 .tool-card{
     padding:18px 0px;
     min-height:170px;
-    /* width: 100px; */
+    width: 100px;
 }
 
 .tool-card img{
@@ -1736,7 +1736,7 @@ font-size:40px;
 }
 
 .tool-card p{
-    font-size:14px;
+    font-size:12px;
     margin-top:12px;
 }
 

@@ -1889,6 +1889,9 @@ line-height:48px;
         width:100%;
         border-radius:12px;
     }
+    .contact-card{
+        width: 70px;
+    }
 
 }
 
