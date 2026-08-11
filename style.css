@@ -1847,7 +1847,7 @@ line-height:48px;
     }
 
     .contact-left p{
-        font-size:15px;
+        font-size:12px;
         line-height:1.8;
     }
 
@@ -1890,7 +1890,7 @@ line-height:48px;
         border-radius:12px;
     }
     .contact-card{
-        width: 70px;
+        width: 290px;
     }
 
 }
