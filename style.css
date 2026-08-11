@@ -1592,6 +1592,25 @@ line-height:48px;
 
 }
 
+@media (max-width: 768px) {
+    .loading-container {
+        width: 180px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .loading-line {
+        width: 150px;
+        height: 4px;
+        margin: 0 auto;
+    }
+
+    .loading-girl {
+        width: 45px;
+        height: auto;
+    }
+}
+
 
 @media (max-width:480px){
 
