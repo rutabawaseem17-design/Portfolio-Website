@@ -1890,8 +1890,13 @@ line-height:48px;
         border-radius:12px;
     }
     .contact-card{
-        width: 290px;
+        width: 420px;
     }
+    .menu-btn{
+    display:flex;
+    font-size:25px;
+    cursor:pointer;
+}
 
 }
 
@@ -1985,5 +1990,48 @@ body.dark .menu-btn{
 body.dark .nav-links{
     background:#1d293d;
 }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    .menu-btn {
+        display: block;
+        order: 1;
+    }
+
+    .logo {
+        font-size: 28px;
+        order: 2;
+    }
+
+    #theme-btn {
+        order: 3;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        border-radius: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 25px 0;
+        box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
 
 }

@@ -1112,7 +1112,7 @@ body.dark .heading h1{
 
 .view-image{
     width:65px;
-    height:65px;
+    height:55px;
 
     border-radius:50%;
     background:white;
@@ -1491,7 +1491,8 @@ font-size:40px;
 }
 
 .hero-left h1{
-    font-size:20px;
+    /* font-size:20px; */
+    font-size:clamp(30px,4vw,80px);
 }
 
 .card-wrapper{
