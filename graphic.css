@@ -515,7 +515,7 @@ body.dark .heading h1{
 }
 
 .view-image{
-    width:65px;
+    width:66px;
     height:55px;
 
     border-radius:50%;
@@ -598,6 +598,21 @@ body.dark .footer{
     color:#fff;
 }
 
+/* certificate */
+.certificate{
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+
+.certificate h1{
+    font-size: 52px;
+    padding: 12px;
+    color:#65765c
+    
+
+
+}
 
 
 /* ==========================
