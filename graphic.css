@@ -515,8 +515,8 @@ body.dark .heading h1{
 }
 
 .view-image{
-    width:66px;
-    height:55px;
+    width:65px;
+    height:35px;
 
     border-radius:50%;
     background:white;
@@ -615,96 +615,7 @@ body.dark .footer{
 }
 
 
-/* ==========================
-   TABLETS
-========================== */
 
-@media (max-width:992px){
-
-.navbar{
-    width:92%;
-    padding:0 25px;
-}
-
-.nav-links{
-    gap:20px;
-}
-
-.logo{
-    font-size:30px;
-}
-
-}
-
-
-/* ==========================
-   MOBILE
-========================== */
-
-@media (max-width:768px){
-
-.navbar{
-    width:95%;
-    height:auto;
-    padding:18px 20px;
-    flex-direction:column;
-    gap:18px;
-    border-radius:20px;
-}
-
-.logo{
-    font-size:30px;
-}
-
-.nav-links{
-    width:100%;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:15px;
-}
-
-.nav-links li{
-    list-style:none;
-}
-
-#theme-btn{
-    width:45px;
-    height:45px;
-}
-
-}
-
-/* ==========================
-   SMALL PHONES
-========================== */
-
-@media (max-width:480px){
-
-.navbar{
-    padding:15px;
-}
-
-.logo{
-    font-size:26px;
-}
-
-.nav-links{
-    /* gap:12px; */
-    display: none;
-}
-
-.nav-links a{
-    font-size:15px;
-    display: none;
-}
-
-#theme-btn{
-    width:40px;
-    height:40px;
-    font-size:16px;
-}
-
-}
 
 
 
@@ -777,14 +688,6 @@ body.dark .footer{
     padding: 80px 20px;
 }
 
-/* .hero-left h1{
-    font-size:10px;
-} */
-
-/* .graphictext{
-     font-size:clamp(10px,1vw,10px);
-
-} */
 
 .hero-left .graphictext{
      font-size:clamp(80px,8vw,50px);
@@ -792,8 +695,8 @@ body.dark .footer{
 }
 
 .card-wrapper{
-    width:10px;
-    height:190px;
+   width:221px;
+    height:290px;
 }
 
 .text-card{
@@ -802,10 +705,6 @@ body.dark .footer{
     padding:18px;
 }
 
-/* .card-wrapper .text-card .image-card{
-    width: 12px;
-    height: 12px;
-} */
 .text-card h3{
     font-size:16px;
 }
@@ -814,6 +713,10 @@ body.dark .footer{
 }
 .image-card{
 
+}
+.certificate img{
+    width: 365px;
+    height: 242px;
 }
 
 }
@@ -1169,5 +1072,136 @@ html{
     font-size:16px;
     padding:25px 12px;
 }
+
+}
+
+
+/* new nav bar */
+
+
+@media (max-width:768px){
+
+.navbar{
+    width:95%;
+    height:70px;
+    padding:0 20px;
+    position:relative;
+}
+
+.menu-btn{
+    display:block;
+    font-size:25px;
+    cursor:pointer;
+}
+
+.nav-links{
+    position:absolute;
+    top:85px;
+    left:0;
+    width:100%;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+    display:none;              /* Hide menu */
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    padding:25px 0;
+}
+
+.nav-links.active{
+    display:flex;              /* Show menu */
+}
+
+body.dark .nav-links{
+    background:#1d293d;
+}
+
+}
+
+
+
+@media (max-width:768px){
+
+.navbar{
+    width:95%;
+    height:70px;
+    padding:0 20px;
+    position:relative;
+}
+
+.menu-btn{
+    display:block;
+    font-size:25px;
+    cursor:pointer;
+}
+
+.nav-links{
+    position:absolute;
+    top:85px;
+    left:0;
+    width:100%;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+    display:none;              /* Hide menu */
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    padding:25px 0;
+}
+
+.nav-links.active{
+    display:flex;              /* Show menu */
+}
+
+body.dark .nav-links{
+    background:#1d293d;
+}
+
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    .menu-btn {
+        display: block;
+        order: 1;
+    }
+
+    .logo {
+        font-size: 28px;
+        order: 2;
+    }
+
+    #theme-btn {
+        order: 3;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 85px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        border-radius: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 25px 0;
+        box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
 
 }

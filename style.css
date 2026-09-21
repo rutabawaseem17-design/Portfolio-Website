@@ -1303,17 +1303,7 @@ line-height:48px;
 
 @media (max-width:1024px){
 
-    /* Navbar */
 
-    /* .navbar{
-        padding:20px;
-    }
-
-    .navlinks{
-        gap:20px;
-    } */
-
-    /* About */
 
     .about{
         height:auto;
@@ -1410,24 +1400,7 @@ line-height:48px;
 
 @media (max-width:768px){
 
-    /* Navbar */
 
-    /* .navbar{
-        flex-direction:column;
-        gap:20px;
-        padding:20px;
-    }
-
-    .logo{
-        flex-direction:column;
-        gap:10px;
-    }
-
-    .navlinks{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
-    } */
 
     /* Hero */
 
@@ -1890,7 +1863,7 @@ line-height:48px;
         border-radius:12px;
     }
     .contact-card{
-        width: 440px;
+        width: 340px;
     }
     .menu-btn{
     display:flex;
@@ -1900,56 +1873,6 @@ line-height:48px;
 
 }
 
-
-
-/* nav bar */
-
-/* @media (max-width:768px){
-
-.navbar{
-    width:95%;
-    padding:0 18px;
-    height:70px;
-    position:relative;
-}
-
-.menu-btn{
-    display:block;
-    font-size:24px;
-}
-
-.logo{
-    font-size:26px;
-}
-
-.nav-links{
-    position:absolute;
-    top:80px;
-    left:0;
-    width:100%;
-    background:#fff;
-    display:none;
-    flex-direction:column;
-    align-items:center;
-    gap:22px;
-    padding:25px 0;
-    border-radius:18px;
-    box-shadow:0 15px 30px rgba(0,0,0,.15);
-}
-
-.nav-links.active{
-    display:flex;
-}
-
-body.dark .nav-links{
-    background:#1d293d;
-}
-
-body.dark .menu-btn{
-    color:#fff;
-}
-
-} */
 
 
 @media (max-width:768px){
