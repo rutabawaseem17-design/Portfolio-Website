@@ -158,8 +158,11 @@ body.dark #theme-btn{
 
 .card-wrapper{
     position:relative;
-    width:320px;
-    height:420px;
+    /* width:320px;
+    height:420px; */
+
+     width:290px;
+    height:360px;
 }
 
 .image-card,
@@ -711,12 +714,13 @@ body.dark .footer{
 .dots{
     display: none;
 }
-.image-card{
 
-}
 .certificate img{
-    width: 335px;
-    height: 242px;
+    width: 255px;
+    height: 152px;
+}
+.certificate h1{
+    font-size: 35px
 }
 
 }
@@ -1034,8 +1038,8 @@ body.dark .footer{
 }
 
 .card-wrapper{
-    width:300px;
-    height:390px;
+    width:200px;
+    height:300px;
 }
 
 }
@@ -1058,6 +1062,7 @@ body.dark .footer{
 
 .footer p{
     line-height:1.8;
+    font-size: 11px;
 }
 
 html{

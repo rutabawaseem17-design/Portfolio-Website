@@ -203,7 +203,7 @@ body.dark #theme-btn{
 .tag{
     opacity:0;
     transform:scale(.5);
-    transition:.4s ease;
+    transition:.6s ease;
 }
 
 /* Card appears */
