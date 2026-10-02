@@ -518,8 +518,10 @@ body.dark .heading h1{
 }
 
 .view-image{
-     width:65px;
+    
+    width:65px;
     height:55px;
+
 
     border-radius:50%;
     background:white;
