@@ -523,14 +523,15 @@ body.dark .heading h1{
     height:55px;
 
 
-    border-radius:50%;
-    background:white;
+    /* border-radius:50%; */
+    /* background:white; */
 
     display:flex;
     justify-content:center;
     align-items:center;
 
-    color:#65765c;
+    /* color:#65765c; */
+    color: white;
     font-size:24px;
 
     transition:.3s;
