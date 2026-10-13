@@ -23,7 +23,7 @@
     <ul class="nav-links">
         <li><a href="#skills">Skills</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#projects">Projects</a></li>
         <!-- <li><a href="#">Illustra</a></li>
         <li><a href="#">Contact</a></li> -->
     </ul>
@@ -313,33 +313,27 @@
 
 </section>
 
-<!-- <section class="portfolio" id="projects">
 
-  <div class="project-heading">
+
+<section class="projects" id="projects">
+
+    <div class="project-heading">
         <h1>FEATURED <span>PROJECTS</span></h1>
         <h3>Full stack, React, and WordPress projects</h3>
     </div>
 
-    </section> -->
-
-    <section class="projects" id="projects">
-
-         <div class="project-heading">
-        <h1>FEATURED <span>PROJECTS</span></h1>
-        <h3>Full stack, React, and WordPress projects</h3>
-    </div>
-
+    <!-- Project Filters -->
     <div class="project-filters">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="react">React</button>
-        <!-- <button class="filter-btn" data-filter="backend">Backend</button>
-        <button class="filter-btn" data-filter="wordpress">WordPress</button> -->
+        <button class="filter-btn" data-filter="wordpress">WordPress</button>
     </div>
 
+    <!-- Projects Grid -->
     <div class="projects-grid">
 
         <!-- TASKLY -->
-        <div class="project-card" data-category="react">
+        <div class="project-card" data-filter="react">
 
             <div class="project-image">
                 <img src="Taskly.png" alt="Taskly Task Manager">
@@ -347,7 +341,6 @@
             </div>
 
             <div class="project-content">
-
                 <h3>Taskly - Task Manager</h3>
 
                 <p>
@@ -365,100 +358,80 @@
                 </div>
 
                 <div class="project-links">
-
-                    <a
-                        href="https://task-manager-gilt-zeta.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link"
-                    >
+                    <a href="https://task-manager-gilt-zeta.vercel.app/"
+                       target="_blank" rel="noopener noreferrer"
+                       class="project-link">
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         <span>Live</span>
                     </a>
 
-                    <a
-                        href="https://github.com/rutabawaseem17-design/Task-Manager.git"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link"
-                    >
+                    <a href="https://github.com/rutabawaseem17-design/Task-Manager.git"
+                       target="_blank" rel="noopener noreferrer"
+                       class="project-link">
                         <i class="fa-brands fa-github"></i>
                         <span>Code</span>
                     </a>
-
                 </div>
-
             </div>
         </div>
 
-                <div class="project-card" data-category="web">
-
-    <div class="project-image">
-        <img src="Digital Wardrobe.png" alt="Digital Wardrobe">
-    </div>
-
-    <div class="project-content">
-
-        <h3>Digital Wardrobe</h3>
-
-        <p>
-            An interactive digital wardrobe where users can manage their clothing,
-            create outfits, dress up a custom doll, save their favorite looks,
-            and explore different outfit combinations.
-        </p>
-
-        <div class="tech-stack">
-            <span>React</span>
-            <span>JavaScript</span>
-            <span>CSS</span>
-            <span>Vite</span>
-            <span>LocalStorage</span>
-        </div>
-
-        <div class="project-links">
-
-            <a
-                href="https://digital-wardrobee.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-link"
-            >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                <span>Live</span>
-            </a>
-
-            <a
-                href="https://github.com/rutabawaseem17-design/Digital-Wardrobe.git"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-link"
-            >
-                <i class="fa-brands fa-github"></i>
-                <span>Code</span>
-            </a>
-
-        </div>
-
-    </div>
-</div>
-
-
-        
-         <div class="project-card" data-category="react">
+        <!-- DIGITAL WARDROBE -->
+        <div class="project-card" data-filter="react">
 
             <div class="project-image">
-                <img src="Spendly.png" alt="Project 2">
+                <img src="Digital Wardrobe.png" alt="Digital Wardrobe">
             </div>
 
             <div class="project-content">
+                <h3>Digital Wardrobe</h3>
 
+                <p>
+                    An interactive digital wardrobe where users can manage
+                    their clothing, create outfits, dress up a custom doll,
+                    save their favorite looks, and explore outfit combinations.
+                </p>
+
+                <div class="tech-stack">
+                    <span>React</span>
+                    <span>JavaScript</span>
+                    <span>CSS</span>
+                    <span>Vite</span>
+                    <span>LocalStorage</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://digital-wardrobee.vercel.app/"
+                       target="_blank" rel="noopener noreferrer"
+                       class="project-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <span>Live</span>
+                    </a>
+
+                    <a href="https://github.com/rutabawaseem17-design/Digital-Wardrobe.git"
+                       target="_blank" rel="noopener noreferrer"
+                       class="project-link">
+                        <i class="fa-brands fa-github"></i>
+                        <span>Code</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SPENDLY -->
+        <div class="project-card" data-filter="react">
+
+            <div class="project-image">
+                <img src="Spendly.png" alt="Spendly Expense Tracker">
+            </div>
+
+            <div class="project-content">
                 <h3>Spendly - Expense Tracker</h3>
 
                 <p>
-                    Spendly is a modern and responsive personal finance tracker
-                     built with React. It allows users to manage income and expenses, 
-                     track transactions, view spending insights, and monitor their overall 
-                     balance through a clean and intuitive dashboard.
+                    A modern and responsive personal finance tracker built
+                    with React. It allows users to manage income and expenses,
+                    track transactions, view spending insights, and monitor
+                    their balance through an intuitive dashboard.
                 </p>
 
                 <div class="tech-stack">
@@ -468,89 +441,153 @@
                 </div>
 
                 <div class="project-links">
-
-                    <a
-                        href="https://spendly-ivory-psi.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link"
-                    >
+                    <a href="https://spendly-ivory-psi.vercel.app/"
+                       target="_blank" rel="noopener noreferrer"
+                       class="project-link">
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         <span>Live</span>
                     </a>
 
-                    <a
-                        href="https://github.com/rutabawaseem17-design/Spendly.git"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="project-link"
-                    >
+                    <a href="https://github.com/rutabawaseem17-design/Spendly.git"
+                       target="_blank" rel="noopener noreferrer"
+                       class="project-link">
                         <i class="fa-brands fa-github"></i>
                         <span>Code</span>
                     </a>
-
                 </div>
-
             </div>
         </div>
 
+        <!-- ILLUSTRA -->
+        <div class="project-card" data-filter="wordpress">
 
-        <!-- <div class="project-card" data-category="web">
+            <div class="project-image">
+                <img src="ILLUSTRA.png" alt="ILLUSTRA E-commerce Website">
+            </div>
+
+            <div class="project-content">
+                <h3>ILLUSTRA — E-commerce Website</h3>
+
+                <p>
+                    A live e-commerce website for my personalized gifts and
+                    illustration business. I customize the website's design
+                    through code, manage products and categories, update
+                    product details, and maintain the online store using
+                    WordPress and WooCommerce.
+                </p>
+
+                <div class="tech-stack">
+                    <span>WordPress</span>
+                    <span>WooCommerce</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>E-commerce</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://illustra.pk/"
+                       target="_blank" rel="noopener noreferrer"
+                       class="project-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <span>Live</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-filter="react">
 
     <div class="project-image">
-        <img src="Digital Wardrobe.png" alt="Digital Wardrobe">
+        <img src="Fog Cam.png" alt="Fog Cam — Interactive Webcam Experience">
     </div>
 
     <div class="project-content">
-
-        <h3>Digital Wardrobe</h3>
+        <h3>Fog Cam — Interactive Mirror</h3>
 
         <p>
-            An interactive digital wardrobe where users can manage their clothing,
-            create outfits, dress up a custom doll, save their favorite looks,
-            and explore different outfit combinations.
+            An interactive webcam experience that creates a foggy mirror
+            effect using real-time hand tracking. Users can wipe away the
+            virtual fog or write on it by moving their index finger in front
+            of the camera. Built with React and MediaPipe for gesture detection.
         </p>
 
         <div class="tech-stack">
             <span>React</span>
             <span>JavaScript</span>
+            <span>MediaPipe</span>
+            <span>HTML</span>
             <span>CSS</span>
-            <span>Vite</span>
-            <span>LocalStorage</span>
+            <span>Computer Vision</span>
         </div>
 
         <div class="project-links">
-
-            <a
-                href="https://digital-wardrobee.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-link"
-            >
+            <a href="https://fog-camera-five.vercel.app/"
+               target="_blank" rel="noopener noreferrer"
+               class="project-link">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 <span>Live</span>
             </a>
 
-            <a
-                href="https://github.com/rutabawaseem17-design/Digital-Wardrobe.git"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-link"
-            >
+            <a href="https://github.com/rutabawaseem17-design/Fog-Camera.git"
+               target="_blank" rel="noopener noreferrer"
+               class="project-link">
                 <i class="fa-brands fa-github"></i>
                 <span>Code</span>
             </a>
+        </div>
+    </div>
+</div>
 
+<div class="project-card" data-filter="react">
+
+    <div class="project-image">
+        <img src="Invisi Cam.png" alt="Invisible Cam — Hand Tracking Camera Experience">
+    </div>
+
+    <div class="project-content">
+        <h3>Invisible Cam — Interactive Camera</h3>
+
+        <p>
+            An interactive webcam experience that creates an invisible-camera
+             effect using real-time hand tracking. Users can make objects or 
+             parts of the live camera view disappear through hand gestures, 
+             creating a playful illusion of invisibility. Built with React and 
+             MediaPipe, the project explores computer vision and gesture-based 
+             interaction.
+        </p>
+
+        <div class="tech-stack">
+            <span>React</span>
+            <span>JavaScript</span>
+            <span>MediaPipe</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Computer Vision</span>
         </div>
 
+        <div class="project-links">
+            <a href="https://invisible-camera.vercel.app/"
+               target="_blank" rel="noopener noreferrer"
+               class="project-link">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>Live</span>
+            </a>
+
+            <a href="https://github.com/rutabawaseem17-design/Invisible-camera.git"
+               target="_blank" rel="noopener noreferrer"
+               class="project-link">
+                <i class="fa-brands fa-github"></i>
+                <span>Code</span>
+            </a>
+        </div>
     </div>
-</div> -->
+</div>
+
+
     </div>
+
 </section>
 
-
-
 <script src="script.js"></script>
-    
 </body>
 </html>

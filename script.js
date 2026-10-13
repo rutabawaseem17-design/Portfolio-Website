@@ -106,46 +106,92 @@ setTimeout(()=>{
 },2500);
 
 
-// graphic
+document.addEventListener("DOMContentLoaded", () => {
 
-// =========================
-// FILTER
-// =========================
+    // =====================================
+    // GRAPHIC DESIGN PORTFOLIO FILTERS
+    // =====================================
 
-const filterBtns = document.querySelectorAll(".filter-btn");
-const portfolioItems = document.querySelectorAll(".portfolio-item");
+    const graphicFilterBtns = document.querySelectorAll(
+        ".filter-buttons .filter-btn"
+    );
 
-filterBtns.forEach(btn=>{
+    const portfolioItems = document.querySelectorAll(
+        ".portfolio-grid .portfolio-item"
+    );
 
-    btn.addEventListener("click",()=>{
+    graphicFilterBtns.forEach((btn) => {
 
+        btn.addEventListener("click", () => {
 
-        filterBtns.forEach(button=>{
-            button.classList.remove("active");
+            graphicFilterBtns.forEach((button) => {
+                button.classList.remove("active");
+            });
+
+            btn.classList.add("active");
+
+            const filter = btn.dataset.filter;
+
+            portfolioItems.forEach((item) => {
+
+                if (
+                    filter === "all" ||
+                    item.dataset.filter === filter
+                ) {
+                    item.classList.remove("hide");
+                } else {
+                    item.classList.add("hide");
+                }
+
+            });
+
         });
 
-        btn.classList.add("active");
+    });
 
-        const filter = btn.dataset.filter;
 
-        portfolioItems.forEach(item=>{
+    // =====================================
+    // WEB DEVELOPMENT PORTFOLIO FILTERS
+    // =====================================
 
-            if(filter==="all" || item.dataset.filter===filter){
+    const projectFilterBtns = document.querySelectorAll(
+        ".project-filters .filter-btn"
+    );
 
-                item.classList.remove("hide");
+    const projectCards = document.querySelectorAll(
+        ".projects-grid .project-card"
+    );
 
-            }else{
+    projectFilterBtns.forEach((btn) => {
 
-                item.classList.add("hide");
+        btn.addEventListener("click", () => {
 
-            }
+            projectFilterBtns.forEach((button) => {
+                button.classList.remove("active");
+            });
+
+            btn.classList.add("active");
+
+            const filter = btn.dataset.filter;
+
+            projectCards.forEach((card) => {
+
+                if (
+                    filter === "all" ||
+                    card.dataset.filter === filter
+                ) {
+                    card.classList.remove("hide");
+                } else {
+                    card.classList.add("hide");
+                }
+
+            });
 
         });
 
     });
 
 });
-
 
 
 
@@ -191,35 +237,4 @@ menuBtn.addEventListener("click", () => {
 });
 
 
-const filterButtons = document.querySelectorAll(".filter-btn");
-const projectCards = document.querySelectorAll(".project-card");
 
-filterButtons.forEach(button => {
-
-    button.addEventListener("click", () => {
-
-        // Remove active class
-        filterButtons.forEach(btn => {
-            btn.classList.remove("active");
-        });
-
-        // Add active class to clicked button
-        button.classList.add("active");
-
-        const filter = button.dataset.filter;
-
-        projectCards.forEach(card => {
-
-            const category = card.dataset.category;
-
-            if (filter === "all" || category === filter) {
-                card.style.display = "flex";
-            } else {
-                card.style.display = "none";
-            }
-
-        });
-
-    });
-
-});

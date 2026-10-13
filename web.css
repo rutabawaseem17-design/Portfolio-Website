@@ -480,6 +480,23 @@ body.dark .project-heading h1{
 }
 
 
+
+.project-card.is-hidden {
+    display: none !important;
+}
+
+.filter-btn {
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background-color: #9fb2a0;
+    border-color: #9fb2a0;
+    color: #fff;
+}
+
+
+
 /* PROJECT GRID */
 
 .projects-grid {
@@ -629,6 +646,12 @@ body.dark .project-heading h1{
     color: #65765c;
     transform: translateY(-2px);
 }
+
+
+.hide {
+    display: none !important;
+}
+
 
 
 /* RESPONSIVE */
